@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>jupyter-template &#8212; Jupyterbook template</title>
+    <title>ECMWF Jupyter based learning resource templates &#8212; Jupyterbook template</title>
   
   
   
@@ -149,7 +149,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="jupyter-notebook-template.html">Title</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter-notebook-template.html">Template for ECMWF Jupyter notebook-based learning resources <em>[H1]</em></a></li>
 </ul>
 
     </div>
@@ -333,7 +333,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>jupyter-template</h1>
+    <h1>ECMWF Jupyter based learning resource templates</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -343,14 +343,24 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices-for-jupyter-notebooks">Best practices for Jupyter notebooks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keep-notebooks-short">Keep notebooks short</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keep-headings-consistent">Keep headings consistent</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#make-use-of-myst-markdown">Make use of MyST markdown</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-images">Use of images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#template-repository">Template repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#template-jupyter-notebook">Template Jupyter notebook</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices-for-jupyter-notebooks">Best practices for Jupyter notebooks</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keep-notebooks-short">Keep notebooks short</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keep-headings-consistent">Keep headings consistent</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#make-use-of-myst-markdown">Make use of MyST markdown</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-images">Use of images</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-data">Use of data</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterbook-build-instructions">Jupyterbook Build instructions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-jupyterbook-locally">Building the JupyterBook locally</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-actions">GitHub actions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-notes">Troubleshooting notes</a></li>
 </ul>
             </nav>
         </div>
@@ -362,34 +372,99 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-template">
-<h1>jupyter-template<a class="headerlink" href="#jupyter-template" title="Permalink to this heading">#</a></h1>
-<p>This is a template repository for Jupyter based training material.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="ecmwf-jupyter-based-learning-resource-templates">
+<h1>ECMWF Jupyter based learning resource templates<a class="headerlink" href="#ecmwf-jupyter-based-learning-resource-templates" title="Permalink to this heading">#</a></h1>
+<p>This repository contains guides to facilitate development and maintenance of ECMWF Jupyter based learning resources. It includes the following templates:</p>
+<ul class="simple">
+<li><p>A template repository, which hosts notebooks, or a collection of similar notebooks</p></li>
+<li><p>A template Jupyter notebook based learning resource, such as a tutorial, example workflow, or similar.</p></li>
+<li><p>A template Jupyterbook landing page to access and render one or more Jupyter notebooks</p></li>
+</ul>
+<section id="template-repository">
+<h2>Template repository<a class="headerlink" href="#template-repository" title="Permalink to this heading">#</a></h2>
+<p>This repository is itself a Github template. A new repository can be created from this by simply selecting the green <code class="docutils literal notranslate"><span class="pre">Use</span> <span class="pre">this</span> <span class="pre">template</span></code> icon on the top right. Create a repository from this template for Jupyter notebooks you plan to develop training purposes at ECMWF.</p>
+<p>The default branch for this repository is <strong>develop</strong>, and this branch is used to deploy the review/development version of the JupyterBook. The <strong>main</strong> branch is reserved for published content and will be maintained by ECMWF.</p>
+<p>The repository includes github-actions which will automatically build a develop version of the Jupyter Book that can be used for review purposes.</p>
+</section>
+<section id="template-jupyter-notebook">
+<h2>Template Jupyter notebook<a class="headerlink" href="#template-jupyter-notebook" title="Permalink to this heading">#</a></h2>
+<p>This repository contains a <a class="reference external" href="https://github.com/ecmwf-training/jupyter-template/blob/develop/jupyter-notebook-template.ipynb">Jupyter notebook template</a>, which provides a suggested structure for Jupyter based ECMWF learning resources. It also includes metadata to be applied at the notebook level and at the cell level according to a metadata-schema described here: <a class="github reference external" href="https://github.com/ecmwf-training/jn-metadata-schema">ecmwf-training/jn-metadata-schema</a>.</p>
 <section id="best-practices-for-jupyter-notebooks">
-<h2>Best practices for Jupyter notebooks<a class="headerlink" href="#best-practices-for-jupyter-notebooks" title="Permalink to this heading">#</a></h2>
+<h3>Best practices for Jupyter notebooks<a class="headerlink" href="#best-practices-for-jupyter-notebooks" title="Permalink to this heading">#</a></h3>
 <section id="keep-notebooks-short">
-<h3>Keep notebooks short<a class="headerlink" href="#keep-notebooks-short" title="Permalink to this heading">#</a></h3>
+<h4>Keep notebooks short<a class="headerlink" href="#keep-notebooks-short" title="Permalink to this heading">#</a></h4>
 <p>Focus on one topic / visualisation / processing routine. Consider separate notebooks if multiple parts or topics are included.</p>
 </section>
 <section id="keep-headings-consistent">
-<h3>Keep headings consistent<a class="headerlink" href="#keep-headings-consistent" title="Permalink to this heading">#</a></h3>
+<h4>Keep headings consistent<a class="headerlink" href="#keep-headings-consistent" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Keep headings in separate cells</p></li>
 <li><p>Use # for first level headings, ## for second level, and so on. Do not skip a level (e.g. do not follow a 1st level heading with a third level, without a second level in between).</p></li>
 </ul>
 </section>
 <section id="make-use-of-myst-markdown">
-<h3>Make use of MyST markdown<a class="headerlink" href="#make-use-of-myst-markdown" title="Permalink to this heading">#</a></h3>
+<h4>Make use of MyST markdown<a class="headerlink" href="#make-use-of-myst-markdown" title="Permalink to this heading">#</a></h4>
 <p>Use coloured cells, icons, etc. where needed.</p>
 </section>
 <section id="use-of-images">
-<h3>Use of images<a class="headerlink" href="#use-of-images" title="Permalink to this heading">#</a></h3>
-<p>Any images unique to the Jupyter notebook should be stored in the ./img folder in this repository. Any images needed across multiple notebooks in multiple repositories (such as logolines) should be linked to elsewhere.</p>
+<h4>Use of images<a class="headerlink" href="#use-of-images" title="Permalink to this heading">#</a></h4>
+<p>Any images unique to the Jupyter notebook should be stored in the ./img folder in this repository. Any images needed across multiple notebooks in multiple repositories (such as logolines) should be sourced from an external URL (see for example links to ECMWF and Copernicus logos here <a class="reference external" href="https://climate.copernicus.eu/branding-guidelines#Logolines">https://climate.copernicus.eu/branding-guidelines#Logolines</a>). Images not already online can be uploaded to a dedicated repository for training hosted at <a class="reference external" href="https://sites.ecmwf.int/training/">https://sites.ecmwf.int/training/</a> (please contact chris.stewart&#64;ecmwf.int).</p>
+</section>
 </section>
 <section id="use-of-data">
 <h3>Use of data<a class="headerlink" href="#use-of-data" title="Permalink to this heading">#</a></h3>
-<p>Data files should not be stored in the Github repository, but hosted externally and linked to, or downloaded from original source (CDS and ADS).</p>
+<p>Data files should not be stored in the Github repository, but hosted externally and linked to, or downloaded from original source (e.g. CDS/ADS).</p>
 </section>
+</section>
+<section id="jupyterbook-build-instructions">
+<h2>Jupyterbook Build instructions<a class="headerlink" href="#jupyterbook-build-instructions" title="Permalink to this heading">#</a></h2>
+<p>Notebook providers are responsible for ensuring that the github actions succesfully build and deploy the
+JupyterBook. It is advisable to test run the build commands and inspect the output locally before pushing
+to the repository as this will save you time and effort.</p>
+<section id="building-the-jupyterbook-locally">
+<h3>Building the JupyterBook locally<a class="headerlink" href="#building-the-jupyterbook-locally" title="Permalink to this heading">#</a></h3>
+<p>The following instructions are for Linux and MacOS users.</p>
+<p>It is recommended that you test the build locally prior to creating your pull request to develop,
+this will address many of the minor issues you may face and provide you with more readable output.
+To ensure that you have the same software installed required to build the JupyterBook,
+and that you are not using any unsupported software packages during a local build, it is recommended
+that you create an conda-forge environment for building Jupyter Books:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">y</span> <span class="o">-</span><span class="n">n</span> <span class="n">JUPYTER</span><span class="o">-</span><span class="n">BUILD</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.12</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">JUPYTER</span><span class="o">-</span><span class="n">BUILD</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>
+</pre></div>
+</div>
+<p>With your JUPYTER-BUILD environment activated the following line will build the jupyterbook locally:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="n">_build</span>
+<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="o">--</span><span class="nb">all</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>This will create all the html files used to create the JupyterBook in the untracked <code class="docutils literal notranslate"><span class="pre">_build/</span></code> folder.
+You can open the homepage of this local build with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">open</span> <span class="n">_build</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+</section>
+<section id="github-actions">
+<h3>GitHub actions<a class="headerlink" href="#github-actions" title="Permalink to this heading">#</a></h3>
+<p>There are two github actions in place for this repository:</p>
+<p>The <strong><code class="docutils literal notranslate"><span class="pre">Build</span></code></strong> action builds the JupyterBook using the same proceedure as local build described below.
+It is activated when a pull request to the <code class="docutils literal notranslate"><span class="pre">develop</span></code> branch is opened, or when any change is made to the
+develop branch (e.g. after merging a pull request). A pull request can only be merged
+into the develop branch if the <code class="docutils literal notranslate"><span class="pre">Build</span></code> action is successful.</p>
+<p>The <strong><code class="docutils literal notranslate"><span class="pre">Deploy</span></code></strong> action deploys the build JupyterBook to the github pages associated with this repository.
+This action is activated when a change is made to the develop branch, after the build action.</p>
+</section>
+</section>
+<section id="troubleshooting-notes">
+<h2>Troubleshooting notes<a class="headerlink" href="#troubleshooting-notes" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Multiple Level 1 Headers (#) in a notebook seems to break the _toc definition of title. It is also bad practice so discourage.</p></li>
+<li><p>JupyterBooks do not have a running python kernel, threrefore they are not compatible with interactive widgets which require a running kernel, e.g. a number of ipywidgets, as documented here: <a class="reference external" href="https://jupyterbook.org/en/stable/interactive/interactive.html?highlight=widgets#ipywidgets">https://jupyterbook.org/en/stable/interactive/interactive.html?highlight=widgets#ipywidgets</a></p></li>
+<li><p>Any additional images included in the notebook should be added using markdown hyperlink syntax, html syntax does not work with our jupyter-books. e.g.: <code class="docutils literal notranslate"><span class="pre">![](.images.png)</span></code></p></li>
+<li><p>Please avoid using placeholder hyperlinks using (the HTML <a> tag without a href provided) and within notebook cross-references (links between sections of the notebook). Due to platform differences they are not rendered correctly on JupyterBook pages and causes many compilation warnings and errors. This means it is much harder for us to identify real issues in the notebook, slowing down the integration process.</p></li>
+<li><p>Please refrain from using HTML tags in general as they often intefere with the HTML config that JupyterBook builds and do not necessarily produce the intended effect when deployed in different environments. Markdown should offer all the text formatting required for the purposes of these traning notebooks.</p></li>
+</ol>
 </section>
 </section>
 
@@ -442,14 +517,24 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices-for-jupyter-notebooks">Best practices for Jupyter notebooks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keep-notebooks-short">Keep notebooks short</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keep-headings-consistent">Keep headings consistent</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#make-use-of-myst-markdown">Make use of MyST markdown</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-images">Use of images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#template-repository">Template repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#template-jupyter-notebook">Template Jupyter notebook</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices-for-jupyter-notebooks">Best practices for Jupyter notebooks</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keep-notebooks-short">Keep notebooks short</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keep-headings-consistent">Keep headings consistent</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#make-use-of-myst-markdown">Make use of MyST markdown</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-images">Use of images</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-data">Use of data</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterbook-build-instructions">Jupyterbook Build instructions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-jupyterbook-locally">Building the JupyterBook locally</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-actions">GitHub actions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-notes">Troubleshooting notes</a></li>
 </ul>
   </nav></div>
 
