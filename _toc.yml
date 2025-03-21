@@ -5,5 +5,10 @@ format: jb-book
 root: intro-jupyter-template
 chapters:
 - file: jupyter-notebook-template
+  title: Jupyter Notebook Template
+- file: viewer-for-sealevel-product
+  title: Viewer for sealevel product
+- file: ocean-colour-sea-surface-temperature
+  title: Ocean colour and sea surface temperature
 
 
