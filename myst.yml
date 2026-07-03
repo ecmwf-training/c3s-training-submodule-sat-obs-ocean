@@ -37,7 +37,7 @@ project:
     - file: sea-surface-ice-surface-temperature
       title: Sea surface and ice surface temperature
     - file: sea-ice-thickness-datasets-changes-trends
-      title: "Sea ice thickness: Datasets, changes and trends"
+      title: Sea ice thickness - Datasets, changes and trends
 site:
   template: book-theme
   options:
