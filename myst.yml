@@ -23,10 +23,19 @@ project:
       template: plain_latex_book
       output: exports/book.pdf
   toc:
-    - file: intro.md
+    # - file: intro.md
     - title: README instructions
       file: README.md
-    - file: template-notebook.ipynb
+    - file: jupyter-notebook-template
+      title: Jupyter Notebook Template
+    - file: viewer-for-sealevel-product
+      title: Viewer for sealevel product
+    - file: viewer-for-sea-ice-concentration
+      title: Viewer for sea ice concentration
+    - file: ocean-colour-sea-surface-temperature
+      title: Ocean colour and sea surface temperature
+    - file: sea-surface-ice-surface-temperature
+      title: Sea surface and ice surface temperature
 site:
   template: book-theme
   options:
