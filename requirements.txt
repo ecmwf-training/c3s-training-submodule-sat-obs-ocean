@@ -1,2 +1,7 @@
 # List here the dependencies required for your notebook to run.
 cdsapi
+cartopy
+scipy
+matplotlib
+colormaps
+xarray
