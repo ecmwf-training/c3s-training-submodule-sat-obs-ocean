@@ -38,6 +38,7 @@ project:
       title: Sea surface and ice surface temperature
     - file: sea-ice-thickness-datasets-changes-trends
       title: Sea ice thickness - Datasets, changes and trends
+    - file: satellite-ist-sst-polar
 site:
   template: book-theme
   options:
