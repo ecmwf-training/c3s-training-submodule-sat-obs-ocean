@@ -5,3 +5,4 @@ scipy
 matplotlib
 colormaps
 xarray
+earthkit~=1.0
