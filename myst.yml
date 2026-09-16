@@ -43,3 +43,4 @@ site:
   template: book-theme
   options:
     folders: true
+    style: ./_static/custom.css
