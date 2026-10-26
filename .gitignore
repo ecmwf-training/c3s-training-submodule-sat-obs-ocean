@@ -170,3 +170,4 @@ _build/
 
 data_dir/
 output_dir/
+.qa-tools/
