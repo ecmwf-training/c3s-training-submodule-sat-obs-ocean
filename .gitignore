@@ -169,3 +169,4 @@ cython_debug/
 _build/
 
 data_dir/
+output_dir/
