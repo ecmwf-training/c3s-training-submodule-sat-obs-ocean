@@ -65,7 +65,7 @@ jobs:
   notebook-qa:
     needs: detect-notebooks
     if: needs.detect-notebooks.outputs.has_notebooks == 'true'
-    uses: ecmwf-training/reusable-workflows/.github/workflows/notebook-qa.yml@v1
+    uses: ecmwf-training/reusable-workflows/.github/workflows/notebook-qa.yml@v1.2
     with:
       notebooks: ${{ needs.detect-notebooks.outputs.notebooks }}
     secrets:
