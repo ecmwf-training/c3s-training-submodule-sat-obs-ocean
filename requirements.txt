@@ -1,9 +1,12 @@
 # List here the dependencies required for your notebook to run.
-cdsapi
 cartopy
+cdsapi
 cmocean
-scipy
-matplotlib
 colormaps
-xarray
 earthkit~=1.0
+geopandas
+matplotlib
+pandas
+rasterio
+scipy
+xarray
